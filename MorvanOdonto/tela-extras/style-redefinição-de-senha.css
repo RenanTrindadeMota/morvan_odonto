@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+
+   background-color: #c8aa8694;
+    
+}
+
+:root {
+    --black:#000000;
+    --white:#ffffff;
+    --light-grayish-orange:#E3D4C2;
+    --grayish-orange:#D3BB9F;
+    --slightly-desaturated-orange--light:#C8AA86;
+    --slightly-desaturated-orange--dark:#B89163;
+    --dark-moderate-orange--yellow-tone:#9F7748;
+    --dark-moderate-orange-black-tone:#7D5E39;
+    --very-dark-orange--brown-tone:#572F00;   
+    /* use "var()" nos lugares de cores e automaticamente vai puxar para escolher as cores de cima */
+  }
+
+
+.space {
+
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.quadrado {
+
+    width: 100ch;
+    height: 80ex;
+    background-color: white;
+    position: relative;
+    display: flex;
+    margin-left: 32%;
+    margin-top: 10%;
+    border-radius: 30px;
+}
+.config {
+
+    max-width: 100ch;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    /* background-color: red; */
+    
+}
+h1 {
+
+    padding: 80px ;
+    font-family: 'Antic Slab';
+
+}
+
+p {
+
+    
+    /* top: 35%;
+    left: 30%; */
+    font-size: 3ex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: 'Antic Slab';
+    padding: 50px;
+    
+
+}
+
+#btn{
+
+    width: 250px;
+    height: 40px;
+    margin: 100px;
+    background-color: #C8AA86;
+    border-radius: 30px;
+    color: black;
+    font-size: 20px;
+    box-shadow:  0.1em 0.1em 0.1em;
+    cursor: pointer;
+    font-family: 'Antic Slab';
+
+}
+
+#btn:hover{
+
+    background-color: #9F7748;
+    color: white;
+}

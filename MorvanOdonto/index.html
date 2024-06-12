@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Morvan Odonto</title>
+</head>
+<body>
+        <div class="fundoh">
+            <header>
+                <div class="spacec">
+                <div class="logo">
+                    <img src="img/logo.png">
+                </div>
+                <a href="index.html"><li><button>Home</button></li></a>
+                <a><li><button id="btnqs">Quem Somos</button></li></a>
+                <a><li><button id="btncl">Nossas Clínicas</button></li></a>
+                <a href="doutores.html"><li><button>Nossa Equipe</button></li></a>
+                <a><li><button id="btnttm">Tratamentos</button></li></a>
+                <a><li><button id="btndp">Depoimentos</button></li></a>
+                <a href="tela-cadastro/index-tela-de-cadastro.html"><li><button>Login</button></li></a>
+            </div>
+            </header>
+        </div>
+
+        <script>
+            document.getElementById('btnqs').addEventListener('click', function() {
+                document.getElementById('qs').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            document.getElementById('btncl').addEventListener('click', function() {
+                document.getElementById('nsscl').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            document.getElementById('btnttm').addEventListener('click', function() {
+                document.getElementById('ttm').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            document.getElementById('btndp').addEventListener('click', function() {
+                document.getElementById('dp').scrollIntoView({ behavior: 'smooth' });
+            });
+        </script>
+
+        <div class="cartaz">
+            <img src="img/cartazc.jpeg">
+         </div>
+
+        <div class="conteiner1">
+            <div class="clin">
+                <img src="img/clin1.jpg">
+            </div>
+
+            <div class="localini">
+                <div class="titloc">
+                    <h1 id="reclocal">Visite nossa clínica na Mooca</h1>
+                    <img id="local" src="img/icon_local.png">
+                </div>
+                <a href="https://maps.app.goo.gl/J8sbND1t6zZE8Bc7A"><img id= "maps" src="img/maps.png"></a>
+            </div>
+        </div>
+
+        <div class="padding">
+            <div class="fundo">
+                <p id="titconq">O que nós conquistamos?</p>
+                <div class="conquistas">  
+                    <div class="pacientes">
+                        <p id="pacientes"><span>+10.000</span></p> <p>Pacientes</p> <p>atendidos</p>
+                    </div>
+                    <div class="cirurgias">
+                        <p id="cirurgias"><span>+2.000</span></p> <p>Cirurgias bem</p> <p>sucedidas</p>
+                    </div>
+                    <div class="clinicas">
+                        <p id="clinicas"><span>5</span></p> <p>Clínicas em</p> <p>São Paulo</p>
+                    </div>
+                    <div class="implantes">
+                        <p id="implantes"><span>+5.000</span></p> <p>Implantes</p> <p>concluídos</p>
+                    </div>
+                </div>
+                <div class="linhas">
+                    <div class="linha"></div>
+                    <div class="linha2"></div>
+                </div>
+                <div class="linhas2">
+                    <div class="linha3"></div>
+                    <div class="linha4"></div>
+                </div>   
+            </div>
+        </div>
+
+        <div class="trat" id="ttm">
+            <div class="qtrat"> 
+                <h2>Nossos Tratamentos</h2>
+                <p>Tratamento de <span>QUALIDADE</span> com os melhores profissionais do Brasil!</p>
+                <a href=""><button id="btnag">Agendar Consulta</button></a>
+            </div>
+
+            <div class="content">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+
+                    <!-- <div class="seta1">
+                        <img src="img/seta.png">
+                    </div> -->
+                    <!-- <div class="seta2"></div> -->
+                    
+                    <div class="slide s1">
+                        <a href="clinico.html">
+                            <div class="card">
+                                <img src="img/clinico.jpg">
+                                <div class="fctrat">
+                                    <p>Clínico Geral</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="ortodontia.html">
+                            <div class="card">
+                                <img src="img/ortodontia.jpg">
+                                <div class="fctrat">
+                                    <p>Ortodontia</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="protese.html">
+                            <div class="card">
+                                <img src="img/protese.jpg">
+                                <div class="fctrat">
+                                    <p>Prótese Dentária</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="periodontia.html">
+                            <div class="card">
+                                <img src="img/periodontia2.jpg">
+                                <div class="fctrat">
+                                    <p>Periodontia</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="slide">
+                        <a href="bruxismo.html">
+                            <div class="card">
+                                <img src="img/bruxismo.jpg">
+                                <div class="fctrat">
+                                    <p>Bruxismo</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="endodontia.html">
+                            <div class="card">
+                                <img src="img/endodontia.jpg">
+                                <div class="fctrat">
+                                    <p>Endodontia</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="facetas.html">
+                            <div class="card">
+                                <img src="img/facetas.jpg">
+                                <div class="fctrat">
+                                    <p>Facetas</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="slide">
+                        <a href="odontopediatria.html">
+                            <div class="card">
+                                <img src="img/odontopediatria.jpg">
+                                <div class="fctrat">
+                                    <p>Odontopediatria</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="estetica.html">
+                            <div class="card">
+                                <img src="img/estetica.png">
+                                <div class="fctrat">
+                                    <p>Estética</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="navigation">
+                    <label class="bar" for="slide1"></label>
+                    <label class="bar" for="slide2"></label>
+                    <label class="bar" for="slide3"></label>
+                </div>
+            </div>
+
+        </div>
+        <!-- nossas clínicas -->
+        <div class="conteiner2" id="nsscl">
+            <div class="fila1">
+                <div class="qclin"> 
+                    <h2>Nossas Clínicas</h2>
+                    <p>Temos as <span>melhores</span> clínicas em São Paulo, todas perto de você</p>
+                    <a href=""><button id="btnag">Agendar Consulta</button></a>
+                </div>
+
+                <div class="clocal" id="mooca2">
+                    <img src="img/mooca2.png">
+                    <div class="fqclin">
+                        <h2>Mooca 2</h2>
+                    </div>
+                    <div class="masc1">
+                        <p>R. Fernando Falcão, 36 Mooca, São Paulo SP, 03180-000</p>
+                    </div>
+                </div>
+
+                <div class="pari">
+                    <img src="img/pari.png">
+                    <div class="fqpari">
+                        <h2>Pari</h2>
+                    </div>
+                    <div class="masc2">
+                        <p>R. Silva Teles, 333 Pari, São Paulo SP, 03026-001</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fila2">
+                <div class="clocal">
+                    <img src="img/mooca1.png">
+                    <div class="fqclin">
+                        <h2>Mooca 1</h2>
+                    </div>
+                    <div class="masc3">
+                        <p>R. Alm. Brasil, 685 Sala 309 Mooca, São Paulo SP, 03162-010 </p>
+                    </div>
+                </div>
+                <div class="clocal">
+                    <img src="img/saocaetsul.png">
+                    <div class="fqclin">
+                        <h2>São Caetano do Sul</h2>
+                    </div>
+                    <div class="masc4">
+                        <p>R. Goitacazes, 347 Sala 1 Centro, São Caetano do Sul SP, 09510-300 </p>
+                    </div>
+                </div>
+                <div class="clocal">
+                    <img src="img/santoa.png">
+                    <div class="fqclin">
+                        <h2>Santo André</h2>
+                    </div>
+                    <div class="masc5">
+                        <p>R. Correia Dias, 18 Sobreloja 1 Centro, Santo André SP, 09010-120 </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+            <!-- depoimentos -->
+
+        <div class="depfundo" id="dp">
+            <div class="linhasdep content2">
+                <p id="depoi">Depoimentos:</p>
+                <div class="cont1">
+                    <div class="deplinha" id="a1"></div>
+                    <div class="deplinha" id="alinhar"></div>
+                    <div class="deplinha" id="alinhar2"></div>
+                </div>
+                <div class="cont2">
+                    <div class="deplinha" id="a2"></div>
+                    <div class="deplinha" id="alinhar3"></div>
+                    <div class="deplinha" id="alinhar4"></div>
+                </div>
+                <div class="cont3">
+                    <div class="deplinha" id="a3"></div>
+                    <div class="deplinha" id="alinhar5"></div>
+                    <div class="deplinha" id="alinhar6"></div>
+                </div>
+            
+                <div class="cont4">
+                    <div class="deplinha2" id="b1"></div>
+                    <div class="deplinha2" id="ali"></div>
+                    <div class="deplinha2" id="ali2"></div>
+                </div>
+                <div class="cont5">
+                    <div class="deplinha2" id="b2"></div>
+                    <div class="deplinha2" id="ali3"></div>
+                    <div class="deplinha2" id="ali4"></div>
+                </div>
+    
+                <div class="depoimentos slidees">
+                    <input type="radio" name="slidee" id="slidee1" checked>
+                    <input type="radio" name="slidee" id="slidee2">
+
+                    <div class="slidee s11">
+                        <div class="maria">
+                            <img src="img/maria.jpeg" id="maria">
+                            <img src="img/google.png" id="google">
+                            <div class="nomedata">
+                                <p id="nome">Maria Carvalho</p>
+                                <p id="data">23-01-2024</p>
+                                <p id="av">A melhor clínica de São Paulo, muito profissionalismo, atenção da equipe, ambiente acolhedor, tecnologia de ponta e pontualidade são apenas algumas das razões pelas quais eu recomendo essa clínica a todos que buscam cuidados odontológicos excepcionais.</p>
+                            </div>
+                            <div class="estrelas">
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                            </div>
+                        </div>
+
+                        <div class="marcelo">
+                            <img src="img/marcelo.jpeg" id="marcelo">
+                            <img src="img/google.png" id="google2">
+                            <div class="nomedata2">
+                                <p id="nome">Marcelo Gomes</p>
+                                <p id="data">08-02-2024</p>
+                                <p id="av">Minha experiência na Morvan Odonto foi excepcional em todos os aspectos. Desde o primeiro contato, fui recebido com calorosa hospitalidade e profissionalismo pela equipe. Os dentistas demonstraram uma competência excepcional, abordando cada procedimento com precisão e cuidado, enquanto mantinham um diálogo claro e informativo comigo durante todo o processo.</p>
+                            </div>
+                            <div class="estrelas">
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                            </div>
+                        </div>
+
+                        <div class="rodrigo">
+                            <img src="img/rodrigo.jpeg" id="rodrigo">
+                            <img src="img/google.png" id="google3">
+                            <div class="nomedata3">
+                                <p id="nome">Rodrigo Lemos</p>
+                                <p id="data">29-02-2024</p>
+                                <p id="av">O consultório é impecavelmente limpo e moderno, criando um ambiente confortável e acolhedor para os pacientes. A tecnologia utilizada é de última geração, o que proporciona um tratamento eficiente e de alta qualidade.</p>
+                            </div>
+                            <div class="estrelas">
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                            </div>
+                        </div>
+
+                        <div class="luan">
+                            <img src="img/luan.jpeg" id="luan">
+                            <img src="img/google.png" id="google4">
+                            <div class="nomedata4">
+                                <p id="nome">Luan Rossi</p>
+                                <p id="data">16-01-2024</p>
+                                <p id="av">Excelente atendimento.</p>
+                            </div>
+                            <div class="estrelas">
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="slidee2">
+                        <div class="julia" >
+                            <img src="img/julia.jpeg" id="julia">
+                            <img src="img/google.png" id="google5">
+                            <div class="nomedata5">
+                                <p id="nome">Julia Medeiros</p>
+                                <p id="data">22-02-2024</p>
+                                <p id="av">Os doutores são super gentis, principalmente a doutora manoela. Meu filho sempre teve medo quando íamos ao dentista, mas devido ao profissionalismo e exeperiência da doutora meu filho ficou calmo e saiu muito feliz da clínica.</p>
+                            </div>
+                            <div class="estrelas">
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                                <div class="estrela"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="navigation1">
+                    <label class="seta1" for="slidee1">
+                        <img src="img/seta3.png" id="setad">
+                    </label>
+                    <label class="seta" for="slidee2">
+                        <img src="img/seta3.png" id="setad">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- quem somos -->
+
+        <div class="quemsomos" id="qs">
+            <div class="tit1">
+                <h1>Quem Somos?</h1>
+                <p>Somos a Morvan Odonto, a rede de clínicas de São Paulo com a maior qualidade em resultados e com a melhor equipe de profissionais no setor odontológico, abrangendo áreas como colocação de prótese, aparelhos dentários, cirurgias, remoção de cisto, dentre diversas outras. Mostre a beleza de seu sorriso #VenhaSerMorvan</p>
+            </div>
+
+            <div class="missao">
+                <h2>Missão:</h2>
+                <p>Garantir a saúde e bem estar dos nossos pacientes através dos nossos tratamentos odontológicos, realizados com excelência e qualidade.</p>
+            </div>
+
+            <div class="visao">
+                <h2>Visão:</h2>
+                <p>Tornar-se referência nacional em tratamento odontológico de qualidade, garantindo a segurança, saúde e bem estar do nosso paciente.</p>
+            </div>
+
+            <div class="valores">
+                <h2>Valores:</h2>
+                <p>Na Morvan Odonto temos como princípio que o nosso serviço sempre terá que agradar o paciente. Assim,visamos uma maior comunicação entre empresa e cliente, sendo a confiabilidade, praticidade e produtividade foco em nossos serviços.</p>
+            </div>
+
+            <a href=""><button id="btnag">Agendar Consulta</button></a>
+        </div>
+
+        <!-- rodapé -->
+
+        <footer>
+            <div class="central">
+                <p id="central">Central de Ajuda:</p>
+                <p id="duvidas">Duvidas, reclamações e sugestões</p>
+                <p id="num">(11) 4002-8922</p>
+            </div>
+            <div class="space">
+                <div class="amorvan">
+                    <ul>
+                        <p id="morvodo">A Morvan Odonto</p>
+                        <a href="index.html#qs"><li>Quem Somos</li></a>
+                        <a href="index.html#nsscl"><li>Nossas Clínicas</li></a>
+                        <a href="index.html#ttm"><li>Nossos Tratamentos</li></a>
+                    </ul>
+                </div>
+                <div class="privacidade">
+                    <p id="priv">Privacidade</p>
+                    <p>Canal de Privacidade</p>
+                    <p>Política de Cookies</p>
+                    <p>Políticas de Privacidade</p>
+                </div>
+                <div class="dados">
+                    <p id="dados">Dados Legais</p>
+                    <p>Morvan Odonto Franchising:
+                        CRO-12044</p>
+                    <p>Responsável técnico:
+                        Renan Trindade</p>
+                    <p>CD Responsável: 
+                        CRO-44803</p>
+                </div>
+                <div class="compromi">
+                    <p>Compromissos públicos - ESG</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQAd4dXlcH57BVJ_H_z82nyJ6piDO87hbKZu5powX4Q&s">
+                </div>
+            </div>
+            <div class="redes">
+                <img src="img/facebook.png" id="face">
+                <img src="img/linkedin.png" id="din">
+                <img src="img/insta.png" id="insta">
+                <img src="img/youtube.png" id="yout">
+            </div>
+            <div class="cnpj">
+                <p>Morvan Odonto S.A - CNPJ: xx.xxx.xxx/xxxx-xx- Endereço: R</p>
+            </div>
+        </footer>
+
+
+
+         
+</body>
+</html>

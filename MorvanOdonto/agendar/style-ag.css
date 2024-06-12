@@ -1,0 +1,251 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------ Lista de Fontes e Cores ------ */
+/* cores */
+:root {
+  /* cores do site */
+  --black: #000000;
+  --white: #ffffff;
+  --light-grayish-orange: #e3d4c2;
+  --grayish-orange: #d3bb9f;
+  --slightly-desaturated-orange--light: #c8aa86;
+  --slightly-desaturated-orange--dark: #b89163;
+  --dark-moderate-orange--yellow-tone: #9f7748;
+  --dark-moderate-orange-black-tone: #7d5e39;
+  --very-dark-orange--brown-tone: #572f00;
+
+  /* cores do calendario */
+  --very-dark-grayish-blue: #455054;
+  --moderate-cyan: #4dbdc6;
+  --grayish-orange-c: #d4cfc9;
+
+  /* use "var()" nos lugares de cores e automaticamente vai puxar para escolher as cores de cima */
+}
+
+/* tipografia */
+@font-face {
+  font-family: "antic didone";
+  src: url(../../Fonte/AnticDidone-Regular.ttf);
+}
+
+
+/* Cor de fundo */
+body {
+  background: var(--light-grayish-orange);
+  overflow-x: hidden;
+}
+
+/* ------ Corpo (Cabecalho) ------ */
+/* Pocisionamento (Fixo) */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+}
+
+/* Pocisionamento (Organizacao) */
+header nav {
+  width: 100%;
+  height: 70px;
+  background-image: linear-gradient(to top, #c8aa86, #e3d4c2, #c8aa86);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagem Logo */
+header img {
+  width: 180px;
+  height: 60px;
+}
+
+/* Estilizacao Lista */
+.nav-lista {
+  list-style: none;
+  display: flex;
+}
+
+/* Estilizacao Botoes */
+header .nav-lista li button {
+  padding: 0px 15px;
+  font-size: 110%;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "antic didone";
+  border: none;
+  color: #7d5e39;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Estilizacao Botoes:hover */
+header .nav-lista li button:hover {
+  color: #7d5e39;
+  text-decoration-line: underline;
+  text-decoration-color: #7d5e39;
+}
+
+
+/* Corpo Principal */
+.Corpo {
+  padding-top: 70px;
+}
+
+/* Barra lateral para controle dos meses */
+.Barra-lateral {
+  display: flex;
+}
+
+/* Mudança de Ano */
+.Barra-lateral .Ano {
+  font-size: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Lista com acesso aos meses do ano */
+.Lista-Meses {
+  width: max-content;
+  height: fit-content;
+  font-size: 1em;
+  background-color: var(--slightly-desaturated-orange--light);
+  display: flexbox;
+  align-content: center;
+  text-align: center;
+}
+
+.Lista-Meses .Ano {
+  margin-top: 40px;
+}
+
+.Lista-Meses ul li {
+  font-size: 1.4em;
+  margin: 2.5px 15px;
+  padding: 0.8em;
+  text-decoration: underline var(--black); /* Transformar em branco quando escolhido */
+  list-style: none;
+}
+
+.Lista-Meses ul li:first-of-type {
+  margin-top: 1.5em;
+}
+
+.Area-agenda embed {
+  min-width: 805px;
+  min-height: 705px;
+  margin-left: 3em;
+}
+
+/* .Lista-Meses #Fevereiro {#}
+.Lista-Meses #Marco {#}
+.Lista-Meses #Abril {#}
+.Lista-Meses .Maio {#}
+.Lista-Meses .Junho {#}
+.Lista-Meses .Julho {#}
+.Lista-Meses .Agosto {#}
+.Lista-Meses .Setembro {#}
+.Lista-Meses .Outubro {#}
+.Lista-Meses .Novembro {#}
+.Lista-Meses .Dezembro {#} */
+
+.Marcação {
+  display: block;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.Marcação .Titulo {
+  font-size: 2em;
+}
+
+/* ------ Area de reponsividade ------ */
+/* botao de responsividade */
+header .Menu {
+  font-size: 45px;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+
+header label[for="Menu"] img {
+  width: 75px;
+  height: 50px;
+}
+
+/* .Menu .chevron-right {
+  animation: keyframes-rotate 0.5s backwards;
+  transform: rotate(180deg);
+} */
+
+/* configuracao no checked */
+/* .Menu input:checked ~ .chevron-right {
+  animation: keyframes-return 0.5s backwards;
+  transform: rotate(0deg);
+} */
+
+/* esconde o input*/
+header input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* ------ Animacao ------ */
+/* @keyframes keyframes-rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes keyframes-return {
+  0% {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+} */
+
+@media (max-width: 450px) {
+  header nav {
+    justify-content: space-around;
+  }
+  .nav-lista {
+    width: 60vw;
+    height: 92vh;
+    position: absolute;
+    top: 70px;
+    right: 0%;
+    border-left: 0.5px solid var(--very-dark-grayish-blue);
+    background: #d6b690;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s ease-in;
+    overflow-x: hidden;
+  }
+
+  header .Menu {
+    display: flex;
+  }
+  
+  #Menu:checked ~ .nav-lista {
+    right: -100%;
+  }
+}

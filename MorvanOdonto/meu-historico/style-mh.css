@@ -1,0 +1,273 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+/* ------ Lista de Fontes e Cores ------ */
+/* cores */
+:root {
+  /* cores do site */
+  --black: #000000;
+  --white: #ffffff;
+  --light-grayish-orange: #e3d4c2;
+  --grayish-orange: #d3bb9f;
+  --slightly-desaturated-orange--light: #c8aa86;
+  --slightly-desaturated-orange--dark: #b89163;
+  --dark-moderate-orange--yellow-tone: #9f7748;
+  --dark-moderate-orange-black-tone: #7d5e39;
+  --very-dark-orange--brown-tone: #572f00;
+
+  /* use "var()" nos lugares de cores e automaticamente vai puxar para escolher as cores de cima */
+}
+
+/* tipografia */
+@font-face {
+  font-family: "antic didone";
+  src: url(../../Fonte/AnticDidone-Regular.ttf);
+}
+
+/* Cor de fundo */
+body {
+  background: var(--light-grayish-orange);
+  overflow-x: hidden;
+}
+
+/* ------ Corpo (Cabecalho) ------ */
+/* Pocisionamento (Fixo) */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+}
+
+/* Pocisionamento (Organizacao) */
+header nav {
+  width: 100%;
+  height: 70px;
+  background-image: linear-gradient(to top, #c8aa86, #e3d4c2, #c8aa86);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagem Logo */
+header img {
+  width: 180px;
+  height: 60px;
+}
+
+/* Estilizacao Lista */
+.nav-lista {
+  list-style: none;
+  display: flex;
+}
+
+/* Estilizacao Botoes */
+header .nav-lista li button {
+  padding: 0px 15px;
+  font-size: 110%;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "antic didone";
+  border: none;
+  color: #7d5e39;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Estilizacao Botoes:hover */
+header .nav-lista li button:hover {
+  color: #7d5e39;
+  text-decoration-line: underline;
+  text-decoration-color: #7d5e39;
+}
+
+/* Separador*/
+.Corpo {
+  padding-top: 70px;
+}
+
+.Cabeca {
+  width: fit-content;
+  max-width: 525px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.Cabeca .titulo {
+  padding: 12px 0;
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+.Cabeca .Classificacao label {
+  max-height: 20px;
+  margin: 1vw 1vh;
+  font-weight: bold;
+  border-radius: 55%;
+  border: var(--very-dark-grayish-blue);
+  display: inline-flex;
+}
+
+.Classificacao #Data,
+.Classificacao #Nome {
+  width: 150px;
+}
+
+.Historico {
+  max-width: 525px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Corpo-menor {
+  width: fit-content;
+  height: max-content;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  margin: 2vh 1vw;
+  border: 2px solid var(--very-dark-grayish-blue);
+  border-radius: 5% 5% 5% 5%/20% 20% 20% 20%;
+  background: var(--slightly-desaturated-orange--light);
+  display: flex;
+}
+
+.Corpo-menor img {
+  width: 13vh;
+  height: 13vh;
+  min-width: 80px;
+  min-height: 80px;
+  max-width: 140px;
+  max-height: 180px;
+  border-radius: 50%;
+  background: var(--white);
+  align-self: center;
+}
+
+.Corpo input,
+.Historico input {
+  height: 18px;
+  border-radius: 5% 5% 5% 5%/50% 50% 50% 50%;
+  text-align: center;
+  border: 0.5px solid var(--dark-moderate-orange-black-tone);
+}
+
+.Corpo-menor .posição {
+  font-weight: bold;
+  align-content: center;
+}
+
+.Informacoes1 label {
+  display: flex;
+  flex-direction: column;
+}
+
+.Informacoes1 label[for="nome"] input,
+label[for="especialidade"] input {
+  width: 200vw;
+  max-width: 200px;
+}
+
+.Informacoes1 label, .Informacoes2 label {
+  margin-left: 55px;
+}
+
+.Informacoes2 label {
+  margin-top: 8px;
+  display: inline-flex;
+}
+
+.Informacoes1 input,
+.Informacoes2 input {
+  height: 18px;
+}
+
+/* ------ Area de reponsividade ------ */
+/* botao de responsividade */
+header .Menu {
+  font-size: 45px;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+
+header label[for="Menu"] img {
+  width: 75px;
+  height: 50px;
+}
+
+/* .Menu .chevron-right {
+  animation: keyframes-rotate 0.5s backwards;
+  transform: rotate(180deg);
+} */
+
+/* configuracao no checked */
+/* .Menu input:checked ~ .chevron-right {
+  animation: keyframes-return 0.5s backwards;
+  transform: rotate(0deg);
+} */
+
+/* esconde o input*/
+header input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* ------ Animacao ------ */
+/* @keyframes keyframes-rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes keyframes-return {
+  0% {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+} */
+
+@media (max-width: 450px) {
+  header nav {
+    justify-content: space-around;
+  }
+  .nav-lista {
+    width: 60vw;
+    height: 92vh;
+    position: absolute;
+    top: 70px;
+    right: 0%;
+    border-left: 0.5px solid var(--very-dark-grayish-blue);
+    background: #d6b690;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s ease-in;
+    overflow-x: hidden;
+  }
+
+  header .Menu {
+    display: flex;
+  }
+  
+  #Menu:checked ~ .nav-lista {
+    right: -100%;
+  }
+}

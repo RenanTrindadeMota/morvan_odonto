@@ -1,0 +1,84 @@
+
+/* cores */
+:root {
+    /* cores do site */
+    --black:#000000;
+    --white:#ffffff;
+    --light-grayish-orange:#E3D4C2;
+    --grayish-orange:#D3BB9F;
+    --slightly-desaturated-orange--light:#C8AA86;
+    --slightly-desaturated-orange--dark:#B89163;
+    --dark-moderate-orange--yellow-tone:#9F7748;
+    --dark-moderate-orange-black-tone:#7D5E39;
+    --very-dark-orange--brown-tone:#572F00;
+    
+    /* use "var()" nos lugares de cores e automaticamente vai puxar para escolher as cores de cima */
+}
+
+/* Tipografia */
+@font-face {
+    font-family: 'antic didone';
+    src: url(../Fonte/AnticDidone-Regular.ttf);
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.Fundo {
+    width: 35em;
+    height: 34em;
+    margin: 4em;
+    background-color: var(--light-grayish-orange);
+    border-radius: 0.4em;
+}
+
+.Titulo {
+    padding: 0.5em;
+    font-size: 3em;
+    color: var(--black);
+    text-align: center;
+    
+}
+
+.Area {
+    width: 100%;
+    font-size: 1.8em;
+    height: fit-content;
+    color: var(--very-dark-orange--brown-tone);
+    background-color: var(--grayish-orange);
+    display: flexbox;
+    box-shadow: 0 20px 5px -20px var(--black) inset, 0 -20px 5px -20px var(--black) inset;
+}
+
+.Area .Agendamento {
+    padding: 2vh;
+    margin-top: 1.5em;
+}
+
+.Area .Medico {
+    padding: 2vh;
+    margin-top: 1.5em;
+}
+
+.Area .Local {
+    padding: 2vh;
+    margin-top: 1.5em;
+}
+
+.Area .barra {
+    border-bottom: 1px solid var(--black);
+    display: flex;
+    justify-content: space-around;
+}
+
+.Area .al {
+    font-family: 'Arial Narrow Bold', sans-serif;
+}

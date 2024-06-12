@@ -1,0 +1,200 @@
+* {
+    /* margin: 0; */
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+
+    height: 100%;
+}
+
+body {
+
+    background-image: linear-gradient( to bottom, #E3D4C2 , #C8AA86);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.logo {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: normal;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2vh;
+    
+}
+
+.G {
+
+    color: #4285F4;
+    font-family: 'Roboto';
+
+}
+
+.o1 {
+    color: #EA4335;
+    font-family: 'Roboto';
+}
+
+.o {
+    color: #FBBC05;
+    font-family: 'Roboto';
+}
+
+.g {
+    color: #4285F4;
+    font-family: 'Roboto';
+}
+
+.l {
+    color: #34A853;
+    font-family: 'Roboto';
+}
+
+.e {
+    color: #EA4335;
+    font-family: 'Roboto';
+}
+
+h1 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vh;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+h2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+    font-family: 'Roboto';
+    font-weight: normal;
+    padding-top: 2vh;
+}
+
+p {
+
+    font-family: 'Roboto';
+    margin-top: 5vh;
+    font-weight: 300;
+    margin-left: 7vh;
+}
+form {
+    
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 1.5rem 1rem;
+    width: 65ch;
+    height: 100ex;
+    /* justify-content: space-evenly; */
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+form input {
+
+    outline: none;
+    padding: 0.4rem 0.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    height: 5ex;
+    margin-top: 5vh;
+    width: 43ch;
+    height: 7ex;
+    border-radius: 0.5vh;
+    margin-left: 7vh;
+    
+}
+
+form input:focus {
+    border: 1.8px solid #1877f2;
+}
+
+form .login {
+    outline: none;
+    border: none;
+    background: #1877f2;
+    padding: 0.8rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    color: #fff;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 80%;
+    left: 57%;
+}
+
+form .login:hover {
+    background: #0f71f1;
+    cursor: pointer;
+}
+
+
+.esquecisenha {
+
+    text-decoration: none;
+    text-align:left;
+    font-size: 0.9rem;
+    margin-left: 7vh;    
+    color: #1877f2;
+    font-family: 'Roboto';
+}
+
+.saibamais{
+
+    text-decoration: none;
+    text-align:left;
+    font-size: 0.9rem;
+    margin-left: 7vh;    
+    color: #1877f2;
+    font-family: 'Roboto';
+}
+
+
+
+
+form .create-account {
+
+    color: #1877f2;
+    width: 15vh;
+    font-family: 'Roboto';
+    position: absolute;
+    top: 80%;
+    
+}
+
+.criar-conta  {
+
+    position: absolute;
+    margin-top: 32.8%;
+    margin-left: 1.3%;
+    color: #0f71f1;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+

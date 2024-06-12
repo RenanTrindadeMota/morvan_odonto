@@ -1,0 +1,286 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------ Lista de Fontes e Cores ------ */
+/* cores */
+:root {
+  /* cores do site */
+  --black: #000000;
+  --white: #ffffff;
+  --light-grayish-orange: #e3d4c2;
+  --grayish-orange: #d3bb9f;
+  --slightly-desaturated-orange--light: #c8aa86;
+  --slightly-desaturated-orange--dark: #b89163;
+  --dark-moderate-orange--yellow-tone: #9f7748;
+  --dark-moderate-orange-black-tone: #7d5e39;
+  --very-dark-orange--brown-tone: #572f00;
+
+  /* use "var()" nos lugares de cores e automaticamente vai puxar para escolher as cores de cima */
+}
+
+/* tipografia */
+@font-face {
+  font-family: "antic didone";
+  src: url(../../Fonte/AnticDidone-Regular.ttf);
+}
+
+
+
+body {
+  background: var(--light-grayish-orange);
+  overflow-x: hidden;
+}
+
+/* ------ Corpo (Cabecalho) ------ */
+/* Pocisionamento (Fixo) */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+}
+
+/* Pocisionamento (Organizacao) */
+header nav {
+  width: 100%;
+  height: 70px;
+  background-image: linear-gradient(to top, #c8aa86, #e3d4c2, #c8aa86);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagem Logo */
+header img {
+  width: 180px;
+  height: 60px;
+}
+
+/* Corecao da Lista */
+.nav-lista {
+  list-style: none;
+  display: flex;
+}
+
+/* Estilizacao Botoes */
+header .nav-lista li button {
+  padding: 0px 20px;
+  font-size: 110%;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "antic didone";
+  border: none;
+  color: #7d5e39;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Estilizacao Botoes:hover */
+header .nav-lista li button:hover {
+  color: #7d5e39;
+  text-decoration-line: underline;
+  text-decoration-color: #7d5e39;
+}
+
+/* Separador*/
+.Corpo {
+  padding-top: 70px;
+}
+
+.Cabeca {
+  width: fit-content;
+  max-width: 525px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Titulo principal */
+.Cabeca .Titulo {
+  padding: 12px 0;
+  font-size: 2.5em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/* Corpo Principal */
+.Corpo-Menor {
+  width: max-content;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Corpo de informações */
+.Corpo-Menor input {
+  border: none;
+  height: 20px;
+  border-radius: 5% 5% 5% 5%/50% 50% 50% 50%;
+  text-align: center;
+  border: 0.5px solid var(--dark-moderate-orange-black-tone);
+}
+
+/* Parte superior do corpo de informações */
+.Corpo-Menor .Parte-superior {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Tamanho da imagem na tabela de informações */
+.Corpo-Menor img {
+  width: 30vw;
+  max-width: 220px;
+  min-width: 120px;
+  height: 20vh;
+  max-height: 200px;
+  min-height: 80px;
+}
+
+.Parte-superior .Separador {
+  width: 220px;
+  margin: 30px 30px 0;
+  display:flex;
+  flex-direction: column;
+}
+
+.Corpo-Menor .Parte-superior input {
+  display: flexbox;
+  margin: 10px 0px;
+}
+
+.Parte-superior #Nome, .Parte-superior #Sobrenome {
+  width: 100vw;
+  min-width: 215px;
+  max-width: 250px;
+}
+
+/* .Parte-superior #Genero {
+  display: none;
+} */
+
+
+/* Parte inferior do corpo de informações */
+.Corpo-Menor .Parte-inferior {
+  width: fit-content;
+  margin: 25px 0px 0px 0px;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,52%);
+}
+
+.Corpo-Menor .Parte-inferior label {
+  display: flex;
+  flex-direction: column;
+}
+
+.Corpo-Menor .Parte-inferior input {
+  margin: 15px 0px;
+  width: 45vw;
+  min-width: 115px;
+  max-width: 270px;
+}
+
+.Corpo-Menor button {
+  margin-top: 60px;
+  padding: 0.5em;
+  border-radius: 15%;
+  border: 0.5px solid var(--dark-moderate-orange-black-tone);
+  background: var(--white);
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+
+.Corpo-Menor button:active {
+  scale: 1.1;
+}
+
+/* ------ Area de reponsividade ------ */
+/* botao de responsividade */
+header .Menu {
+  font-size: 45px;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+
+header label[for="Menu"] img {
+  width: 75px;
+  height: 50px;
+}
+
+/* .Menu .chevron-right {
+  animation: keyframes-rotate 0.5s backwards;
+  transform: rotate(180deg);
+} */
+
+/* configuracao no checked */
+/* .Menu input:checked ~ .chevron-right {
+  animation: keyframes-return 0.5s backwards;
+  transform: rotate(0deg);
+} */
+
+/* esconde o input*/
+header input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* ------ Animacao ------ */
+/* @keyframes keyframes-rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes keyframes-return {
+  0% {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+} */
+
+@media (max-width: 450px) {
+  header nav {
+    justify-content: space-around;
+  }
+  .nav-lista {
+    width: 60vw;
+    height: 92vh;
+    position: absolute;
+    top: 70px;
+    right: 0%;
+    border-left: 0.5px solid var(--very-dark-grayish-blue);
+    background: #d6b690;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s ease-in;
+    overflow-x: hidden;
+  }
+
+  header .Menu {
+    display: flex;
+  }
+  
+  #Menu:checked ~ .nav-lista {
+    right: -100%;
+  }
+
+}

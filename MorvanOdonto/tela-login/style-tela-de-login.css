@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+:root {
+  --black:#000000;
+  --white:#ffffff;
+  --light-grayish-orange:#E3D4C2;
+  --grayish-orange:#D3BB9F;
+  --slightly-desaturated-orange--light:#C8AA86;
+  --slightly-desaturated-orange--dark:#B89163;
+  --dark-moderate-orange--yellow-tone:#9F7748;
+  --dark-moderate-orange-black-tone:#7D5E39;
+  --very-dark-orange--brown-tone:#572F00;   
+  /* use "var()" nos lugares de cores e automaticamente vai puxar para escolher as cores de cima */
+}
+
+.imgfundo {
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  filter: blur(2px);
+  top: 0;
+  left: 0;
+  background-color: red;
+  background-image: url(../img/pexels-fr3nks-305566.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quadrado {
+
+    width: 80ch;
+    height: 120ex;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow:  1px 1px 15px 15px   #d3bb9fa1 ;
+    z-index: 1;
+  }
+
+  h1 {
+
+    position: absolute;
+    left: 40%;
+    top: 8%;
+    font-family: 'Antic Slab';
+
+  }
+
+  .bloco-Email {
+
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input {
+
+    width: 55ch;
+    height: 5ex;
+    background-color: rgba(128, 128, 128, 0.041);
+    border-radius: 5px;
+  }
+
+  .bloco-Senha {
+
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #btn  {
+
+    width: 30ch;
+    height: 8ex;
+    background-color: #c8aa86bb;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0.3em 0.3em rgba(128, 128, 128, 0.096);
+  }
+
+  #btn p {
+
+    
+    font-size: 2em;
+  }
+
+  .Recuperacao-de-senha {
+
+    position: absolute;
+    top: 42%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    font-size: 1.0rem;
+  }
+
+  .Recuperacao-de-senha:hover {
+
+    text-decoration: underline;
+  }
+
+ .Cadastrar-no-site {
+
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.1rem;
+ }
+
+ .Cadastrar-no-site:hover {
+
+  text-decoration: underline;
+ }
+
+ .buttong {
+  max-width: 320px;
+  display: flex;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  gap: 0.75rem;
+  color: rgb(65, 63, 63);
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .6s ease;
+  margin-bottom: 2% ;
+  
+}
+
+.buttong svg {
+  height: 24px;
+}
+
+.buttong:hover {
+
+  transform: scale(1.02);
+  
+}
+
+.buttonf {
+  width: 18.5em;
+  display: flex;
+  background-color: #039be5;
+  background-image: linear-gradient(to top right, #0163E0,#18ACFE);
+  color: #ffffff;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  gap: 0.75rem;
+  border: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: .6s ease;
+}
+
+.buttonf svg {
+  height: 30px;
+}
+
+.buttonf:hover {
+  transform: scale(1.02);
+}
+
+.botoes {
+
+  position: absolute;
+  top: 75%;
+  left: 30%;
+}
+
+#btn:hover {
+
+  background-color: #9F7748;
+  color: white;
+}

@@ -1,0 +1,100 @@
+
+/* cores */
+:root {
+    /* cores do site */
+    --black:#000000;
+    --white:#ffffff;
+    --light-grayish-orange:#E3D4C2;
+    --grayish-orange:#D3BB9F;
+    --slightly-desaturated-orange--light:#C8AA86;
+    --slightly-desaturated-orange--dark:#B89163;
+    --dark-moderate-orange--yellow-tone:#9F7748;
+    --dark-moderate-orange-black-tone:#7D5E39;
+    --very-dark-orange--brown-tone:#572F00;
+    
+    /* cores do calendario */
+    --very-dark-grayish-blue:#455054;
+    --moderate-cyan:#4dbdc6;
+    --grayish-orange-c:#d4cfc9;
+
+
+    --Sans: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* use "var()" nos lugares de cores e automaticamente vai puxar para escolher as cores de cima */
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Calendario */
+.Calendário {
+    width: max-content;
+    height: max-content;
+    margin-top: 4em ;
+    padding: 3em;
+    border: 1px solid var(--grayish-orange-c);
+    display: flexbox;
+    
+}
+
+.Calendário .Tempo {
+    font-size: 3em;
+    color: var(--very-dark-grayish-blue);
+    font-family: var(--Sans);
+    text-align: center;
+}
+
+/* Grid usado no posicionamento */
+.Dia-Semana, .Dias {
+    font-size: 2.3em;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+/* Escolha do primeiro dia da semana */
+.Dias button:first-child {
+    grid-column: 6;
+}
+
+
+.Dia-Semana {
+    letter-spacing: 0.2em;
+    margin-top: 1em;
+}
+
+.Dias {
+    margin-top: 1em;
+}
+
+
+.Dias button time{
+    font-size: 2.4em;
+}
+
+.Dias button {
+    width: 12ch;
+    height: 10ch;
+    border-radius: 25%;
+    border: none;
+    color: var(--black);
+    background-color: transparent;
+    position: relative;
+}
+
+.Dias button:hover, 
+.Dias button:focus {
+    outline: none;
+    background-color: var(--moderate-cyan) ;
+    color: var(--white);
+}
+
+.Dias button:active,
+.Dias button.is-selected {
+    background-color: var(--very-dark-grayish-blue);
+    color: var(--white);
+}

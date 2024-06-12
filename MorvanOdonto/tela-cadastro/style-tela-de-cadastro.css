@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    
+    background-image: url(../img/Background-tela-de-cadastro.jpg);
+    background-repeat: no-repeat; /*nao repetir a imagem no plano de fundo */
+    background-size: cover; /* Serve para ampliar a imagem para o fundo todo*/
+
+}
+
+.imgfundo {
+
+    background-image: url(../img/Background-tela-de-cadastro.jpg);
+    background-repeat: no-repeat; /*nao repetir a imagem no plano de fundo */
+    background-size: cover; /* Serve para ampliar a imagem para o fundo todo*/
+    filter: blur(2px);
+}
+
+.quadro {
+
+    width: 1200px;
+    height: 850px;
+    background-color: #E3D4C2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+
+.navbar {
+
+    width: 1200px;
+    height: 180px;
+    background-color: #b8906373;
+    position: absolute;
+    top: 14.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+.navbar img {
+
+    width: 350px;
+    height: 120px;
+    position: absolute;
+    top: 48%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+}
+
+.barra-meio {
+
+    width: 2px;
+    height: 120px;
+    /* border: 1px solid white; */
+    background-color: white;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar h1 {
+
+    /*mudar a font da letra*/
+    position: absolute;
+    left: 55%;
+    top: 35%;
+    color: #7D5E39;
+}
+
+.bloco-nome {
+
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: 'Antic Slab';
+
+
+}
+
+#nome {
+
+    width: 850px;
+    height: 30px;
+}
+
+.bloco-idade {
+
+    position: absolute;
+    top: 43%;
+    left: 582px;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: 'Antic Slab';
+
+}
+
+#Idade {
+
+    width: 100px;
+    height: 30px;
+}
+
+.bloco-Data-de-nascimento {
+
+    position: absolute;
+    top: 43%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: 'Antic Slab';
+
+}
+
+#Data-de-nascimento {
+
+    width: 200px;
+    height: 30px;
+}
+
+.bloco-genero {
+
+    position: absolute;
+    top: 43%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: 'Antic Slab';
+
+}
+
+.bloco-CPF {
+
+    position: absolute;
+    top: 50%;
+    left: 675px;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: 'Antic Slab';
+
+}
+
+#CPF {
+
+    width: 300px;
+    height: 30px;
+}
+
+.bloco-Email {
+
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: 'Antic Slab';
+
+}
+
+#Email {
+
+    width: 470px;
+    height: 30px;
+}
+
+.bloco-Endereço {
+
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: 'Antic Slab';
+
+}
+
+#Endereço {
+
+    width: 820px;
+    height: 30px;
+}
+
+.bloco-Bairro {
+
+    position: absolute;
+    top: 64%;
+    left: 36.2%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: 'Antic Slab';
+
+}
+
+#Bairro {
+
+    width: 320px;
+    height: 30px;
+}
+
+.bloco-CEP {
+
+    position: absolute;
+    top: 64%;
+    left: 62.2%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: 'Antic Slab';
+
+}
+
+#CEP {
+
+    width: 400px;
+    height: 30px;
+}
+
+.bloco-Celular {
+
+    position: absolute;
+    top: 71%;
+    left: 37.2%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: 'Antic Slab';
+
+}
+
+#Celular {
+
+    width: 350px;
+    height: 30px;
+}
+
+.bloco-Telefone {
+
+    position: absolute;
+    top: 71%;
+    left: 62.2%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: 'Antic Slab';
+
+}
+
+#Telefone {
+
+    width: 353px;
+    height: 30px;
+}
+
+#btn{
+
+    width: 150px;
+    height: 30px;
+    background-color: #C8AA86;
+    color: white;
+    position: absolute;
+    top: 87%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    color: black;
+    font-size: 15px;
+    box-shadow:  0.1em 0.1em 0.1em;
+    cursor: pointer;
+    font-family: 'Antic Slab';
+
+
+}
+
+
