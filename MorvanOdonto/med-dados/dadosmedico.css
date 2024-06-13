@@ -1,0 +1,311 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --light-grayish-orange: #e3d4c2;
+  --grayish-orange: #d3bb9f;
+  --slightly-desaturated-orange--light: #c8aa86;
+  --slightly-desaturated-orange--dark: #b89163;
+  --dark-moderate-orange--yellow-tone: #9f7748;
+  --dark-moderate-orange-black-tone: #7d5e39;
+  --very-dark-orange--brown-tone: #572f00;
+}
+
+@font-face {
+  font-family: "antic didone";
+  src: url(Fonte/AnticDidone-Regular.ttf);
+
+  font-family: "inter";
+  src: url(fonte/Inter.ttc);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #d3bb9f;
+}
+
+/* -----Cabeçalho------- */
+
+/* Pocisionamento (Fixo) */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+}
+
+/* Posicionamento (Organizacao) */
+header nav {
+  width: 100%;
+  height: 70px;
+  background-image: linear-gradient(to top, #c8aa86, #e3d4c2, #c8aa86);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagem Logo */
+header img {
+  width: 180px;
+  height: 60px;
+  margin-right: 10vh;
+  margin-left: -40vh;
+}
+
+/* Estilizacao Lista */
+.nav-lista {
+  list-style: none;
+  display: flex;
+}
+
+/* Estilizacao Botoes */
+header .nav-lista li button {
+  padding: 0px 15px;
+  font-size: 110%;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "antic didone";
+  margin: 4vh;
+
+  border: none;
+  color: #7d5e39;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Estilizacao Botoes:hover */
+header .nav-lista li button:hover {
+  color: #7d5e39;
+  text-decoration-line: underline;
+  text-decoration-color: #7d5e39;
+}
+
+/* ------ Area de reponsividade ------ */
+/* botao de responsividade */
+header .Menu {
+  font-size: 45px;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+
+header label[for="Menu"] img {
+  width: 75px;
+  height: 50px;
+}
+
+/* .Menu .chevron-right {
+    animation: keyframes-rotate 0.5s backwards;
+    transform: rotate(180deg);
+  } */
+
+/* configuracao no checked */
+/* .Menu input:checked ~ .chevron-right {
+    animation: keyframes-return 0.5s backwards;
+    transform: rotate(0deg);
+  } */
+
+/* esconde o input*/
+header input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* ------ Animacao ------ */
+/* @keyframes keyframes-rotate {
+    0% {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  
+  @keyframes keyframes-return {
+    0% {
+      transform: rotate(180deg);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  } */
+
+@media (max-width: 450px) {
+  header nav {
+    justify-content: space-around;
+  }
+  .nav-lista {
+    width: 60vw;
+    height: 92vh;
+    position: absolute;
+    top: 70px;
+    right: 0%;
+    border-left: 0.5px solid var(--very-dark-grayish-blue);
+    background: #d6b690;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s ease-in;
+    overflow-x: hidden;
+  }
+
+  header .Menu {
+    display: flex;
+  }
+
+  #Menu:checked ~ .nav-lista {
+    right: -100%;
+  }
+}
+
+/* conteudo */
+
+.conteudo {
+  background-color: #d3bb9f;
+  padding: 5vh;
+}
+
+.conteudo p {
+  font-size: 6vh;
+  display: flex;
+  justify-content: center;
+}
+
+.dados {
+  width: 95vh;
+  height: 50vh;
+  border-style: solid;
+  border-radius: 1vh;
+  font-family: "antic";
+  display: flex;
+  flex-direction: column;
+  margin-left: 42vh;
+  padding: 5vh;
+  background-color: #c99d6c;
+}
+
+.dados input {
+  font-family: "inter";
+  font-size: 2.7vh;
+  border-color: #000000;
+  outline: none;
+  margin-left: 1vh;
+}
+
+label {
+  font-size: 3vh;
+}
+
+.conteudo .dados img {
+  width: 25vh;
+  height: 15;
+  margin-left: 5vh;
+  margin-bottom: -25vh;
+}
+
+.conteudo .dados .nome label {
+  margin-left: 38vh;
+}
+
+#nome {
+  border-radius: 1vh;
+  width: 41vh;
+
+  margin-bottom: 3vh;
+}
+
+.conteudo .dados .sobrenome label {
+  margin-left: 37.5vh;
+}
+
+#sobrenome {
+  border-radius: 1vh;
+  width: 35vh;
+
+  margin-bottom: 3vh;
+}
+
+.conteudo .dados .cpf label {
+  margin-left: 38vh;
+}
+
+#cpf {
+  border-radius: 1vh;
+  width: 20vh;
+
+  margin-left: 38vh;
+}
+
+.conteudo .dados .contato label {
+  margin-left: 65vh;
+}
+
+#contato {
+  width: 25vh;
+  border-radius: 1vh;
+
+  margin-left: 64.7vh;
+  margin-bottom: 3vh;
+}
+
+.contato {
+  margin-top: -7.7vh;
+}
+
+.conteudo .dados .cargo label {
+  margin-left: 38vh;
+}
+
+#cargo {
+  width: 28vh;
+  border-radius: 1vh;
+
+  margin-left: 38vh;
+}
+
+.conteudo .dados .clinica label {
+  margin-left: 75vh;
+}
+
+#clinica {
+  border-radius: 1vh;
+  width: 15vh;
+
+  margin-left: 75vh;
+  margin-bottom: 3vh;
+}
+
+.clinica {
+  margin-top: -7.3vh;
+}
+
+.conteudo .dados .cep label {
+  margin-left: 30vh;
+}
+
+#cep {
+  width: 61vh;
+  border-radius: 1vh;
+
+  margin-left: 29vh;
+  margin-bottom: 5vh;
+}
+
+.enviar button {
+  width: 17vh;
+  height: 5vh;
+  font-size: 3vh;
+  font-family: "antic";
+  border-radius: 1vh;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+  margin-left: 73vh;
+}

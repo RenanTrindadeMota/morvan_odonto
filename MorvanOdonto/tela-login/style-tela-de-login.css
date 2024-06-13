@@ -36,7 +36,7 @@ a {
   filter: blur(2px);
   top: 0;
   left: 0;
-  background-color: red;
+  /* background-color: red; */
   background-image: url(../img/pexels-fr3nks-305566.jpg);
   background-repeat: no-repeat;
   background-size: cover;

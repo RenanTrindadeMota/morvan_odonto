@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuario page</title>
+    <link rel="stylesheet" href="prontuario.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+    
+          <img src="../img/Logo.png" />
+          <label for="Menu" class="Menu">
+            <!-- <input type="checkbox" checked="checked" id="Menu" /> -->
+              <svg viewBox="0 0 320 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="chevron-right"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path></svg>
+              <img src="../img/perfil.png"></i>
+          </label>
+          <input type="checkbox" checked="checked" id="Menu" />
+          <ul class="nav-lista">
+            <li>
+              <a href="../med-area/areamedico1.html"><button>Home</button></a>
+            </li>
+            <li>
+              <a href="../med-dados/dadosmedico.html"><button>Meus Dados</button></a>
+            </li>
+            <li> 
+              <a href="../med-cal/index-Calendário.html"><button>Agendamento</button></a>
+            </li>
+            <li> 
+              <a href="../med-historico/historico.html"><button>Históricos</button></a>
+            </li>
+            <li>
+              <a href="../agendar/Area_de agendamento(Calendario).html"><button>Sair</button></a>
+            </li>
+          </ul>
+            
+        </nav>
+    </header>
+
+    <!-- Prontuario -->
+    <section class="info paciente">
+       
+        <form action="">
+
+    <div class="textop">
+        <p>Informações do Paciente</p>
+    </div>
+
+<div class="conteudo">
+
+<div class="name">      
+<label  for="name">Nome completo :</label>
+<input type="text" id="name"></input>
+</div>
+
+<div class="idade">         
+<label for="idade">Idade :</label>
+<input type="text" id="idade">
+</div>
+
+<div class="genero">
+<label for="genero">Sexo :</label>
+<input type="radio" name="genero" id="genero">Masc.</input>
+<input type="radio" name="genero" id="genero">Fem.</input>
+</div>
+        
+<div class="primeira">
+<label for="primeira">Quando foi seu último tratamento dentário ?</label>
+<br>
+<input type="radio" name="primeira" id="primeira">1 semana</input>
+<input type="radio" name="primeira" id="primeira">1 mês ou +</input>
+<input type="radio" name="primeira" id="primeira">6 meses ou +</input>
+<input type="radio" name="primeira" id="primeira">1 ano ou +</input>
+<input type="radio" name="primeira" id="primeira">É meu primeiro tratamento</input>            
+</div>
+
+<div class="segunda">
+<label for="segunda">Faz uso de algum medicamento ?</label>
+<input type="radio" name="segunda" id="segunda">Sim</input>
+<input type="radio" name="segunda" id="segunda">Não</input>
+<br>
+<label for="segunda">Se sim, quais ?</label>
+<input type="text" id="segunda"></input>
+</div>
+            
+<div class="terceira">
+<label for="terceira">Tem algum tipo de alergia ?</label>
+<input type="radio" name="terceira" id="terceira">Sim</input>
+<input type="radio" name="terceira" id="terceira">Não</input>
+<br>
+<label for="terceira">Se sim, qual/quais?</label>
+<input type="text" id="terceira"></input>
+</div>
+
+<div class="quarta">
+<label for="quarta">Sua pressão é :</label>
+<input type="radio" name="quarta" id="quarta">Normal</input>
+<input type="radio" name="quarta" id="quarta">Alta</input>
+<input type="radio" name="quarta" id="quarta">Baixa</input>
+<input type="radio" name="quarta" id="quarta">Controlada c/medicamento</input>
+</div>
+
+<div class="quinta">
+<label for="quinta">Tem ou teve algum problema no coração?</label>
+<input type="text"  id="quinta"></input>
+</div>
+
+<div class="sexta">
+<label for="sexta">Tem algum histórico de problema respiratório?</label>
+<input type="radio" name="sexta" id="sexta">Sim</input>
+<input type="radio" name="sexta" id="sexta">Não</input>
+<br>
+<label for="sexta">Se sim, qual/quais?</label>
+<input type="text" id="sexta"></input>
+</div>
+            
+<div class="setima">
+<label for="setima">Tem diabetes</label>
+<input type="radio" name="setima" id="setima">Sim</input>
+<input type="radio" name="setima" id="setima">Não</input>
+<input type="radio" name="setima" id="setima">Não sei</input>
+</div>
+            
+<div class="oitava">
+<label for="oitava">Já teve alguma cirurgia?</label>
+<input type="radio" name="oitava" id="oitava">Sim</input>
+<input type="radio" name="oitava" id="oitava">Não</input>
+<br>
+<label for="oitava">Qual?</label>
+<input type="text" id="oitava"></input>
+</div>
+            
+<div class="nona">
+<label for="nona">É gestante?</label>
+<input type="radio" name="nona" id="nona">Sim</input>
+<input type="radio" name="nona" id="nona">Não</input>
+<input type="radio" name="nona" id="nona">Não sei</input>
+<br>
+<label for="nona">Semanas:</label>
+<input type="text" id="nona"></input>
+</div>
+
+<div class="decima">
+<label for="decima">Problemas de saúde que já teve:</label>
+<input type="text" id="decima"></input>
+</div>
+
+<div class="onze">
+<label for="onze">Queixa Principal:</label>
+<input type="text" id="onze"></input>
+</div>
+
+<div class="doze">
+<label for="doze">Já teve alguma reação com anestesia dental?</label>
+<input type="radio" name="doze" id="doze">Sim</input>
+<input type="radio" name="doze" id="doze">Não</input>
+</div>
+
+<div class="treze">
+<label for="treze">Sente dores ou estalos no maxilar?</label>
+<input type="radio" name="treze" id="treze">Sim</input>
+<input type="radio" name="treze" id="treze">Não</input>
+</div>
+
+<div class="catorze">
+<label for="catorze">Range os dentes com frequência?</label>
+<input type="radio" name="catorze" id="catorze">Sim</input>
+<input type="radio" name="catorze" id="catorze">Não</input>
+</div>
+
+<div class="quinze">
+<label for="quinze">Faz uso de cigarros?</label>
+<input type="radio" name="quinze" id="quinze">Sim</input>
+<input type="radio" name="quinze" id="quinze">Não</input>
+</div>
+
+<p><b>Declaro para fins de direitos que as informações acima prestadas são verdadeiras.</b></p>
+<!-- final da div "conteudo" -->
+</div> 
+</form>
+</section>
+
+<!-- Informações da consulta -->
+<form action="">
+<section class="info consultas">
+
+    <div class="textop2">
+        <p>Informações da consulta</p>
+    </div>
+
+<div class="conteudo2">
+     
+    <div class="tipoc">
+     <label for="tipoc">Tipo de Consulta:</label>
+     <select name="tipoc" id="tipoc">
+          <option value="1">Ortodontia</option>
+          <option value="2">Prótese Dentaria</option>
+          <option value="3">Periodontia</option>
+          <option value="4">Bruxismo</option>
+          <option value="5">Endodontia</option>
+          <option value="6">Facetas</option>
+          <option value="7">Estética</option>
+          <option value="8">Odontopediatria</option>
+        </select>
+    </div>
+        
+    <div class="data">
+        <label for="data">Data :</label>
+        <input type="date" id="data"></input>
+
+        <label for="data">Horário:</label>
+        <input type="text"  id="data"></input>
+    </div>
+
+   <form>
+    <div class="obs">
+        <label for="obs">Observações :</label>
+        
+        <textarea id="obs"></textarea>
+    </div>
+    </form>
+
+    <div class="enviar">
+        <a href="../med-area/areamedico1.html">Enviar</a>
+    </div>
+
+
+<!-- final da div conteudo2 -->
+</div>
+</section>
+</form>
+
+
+
+</div>
+</section>
+    
+</body>
+</html>
