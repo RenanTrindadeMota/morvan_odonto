@@ -30,9 +30,8 @@
 /* tipografia */
 @font-face {
   font-family: "antic didone";
-  src: url(../Fonte/AnticDidone-Regular.ttf);
+  src: url(../../Fonte/AnticDidone-Regular.ttf);
 }
-
 
 /* Cor de fundo */
 body {
@@ -91,13 +90,13 @@ header .nav-lista li button:hover {
   text-decoration-color: #7d5e39;
 }
 
-
-/* Corpo Principal */
+/* ------ Corpo Principal ------ */
 .Corpo {
   padding-top: 70px;
+  display: flex;
 }
 
-/* Barra lateral para controle dos meses */
+/* ------ Barra lateral para controle dos meses ------ */
 .Barra-lateral {
   display: flex;
 }
@@ -112,58 +111,114 @@ header .nav-lista li button:hover {
 /* Lista com acesso aos meses do ano */
 .Lista-Meses {
   width: max-content;
-  height: fit-content;
-  font-size: 1em;
+  height: 100%;
   background-color: var(--slightly-desaturated-orange--light);
-  display: flexbox;
-  align-content: center;
   text-align: center;
 }
 
 .Lista-Meses .Ano {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .Lista-Meses ul li {
-  font-size: 1.4em;
-  margin: 2.5px 15px;
-  padding: 0.8em;
-  text-decoration: underline var(--black); /* Transformar em branco quando escolhido */
+  font-size: 1.24em;
+  margin: 0 15px;
+  padding: 0.7em ;
   list-style: none;
 }
 
+.Lista-Meses ul li label {
+  cursor: pointer;
+}
+
+.Lista-Meses ul li label:active {
+  text-decoration: underline var(--black);
+}
+
 .Lista-Meses ul li:first-of-type {
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
-.Area-agenda embed {
-  min-width: 805px;
-  min-height: 705px;
-  margin-left: 3em;
+
+embed {
+  width: 18vw;
+  min-width: 836px;
+  height: 18.6vh;
+  min-height: 836px;
 }
 
-/* .Lista-Meses #Fevereiro {#}
-.Lista-Meses #Marco {#}
-.Lista-Meses #Abril {#}
-.Lista-Meses .Maio {#}
-.Lista-Meses .Junho {#}
-.Lista-Meses .Julho {#}
-.Lista-Meses .Agosto {#}
-.Lista-Meses .Setembro {#}
-.Lista-Meses .Outubro {#}
-.Lista-Meses .Novembro {#}
-.Lista-Meses .Dezembro {#} */
+.content {
+  width: 800px;
+  margin-left: 0vw;
+  overflow-x: hidden;
+}
 
-.Marcação {
-  display: block;
-  justify-content: center;
-
+.slides {
+  width: max-content;
+  height: max-content;
+  display: flex;
   align-items: center;
 }
 
-.Marcação .Titulo {
-  font-size: 2em;
+.content .slides input {
+    display: none;
 }
+
+.slide {
+  display: flex;
+  transition: 0.6s;
+}
+
+/* ------ Movimentacao dos slides ------ */
+/* janeiro */
+#slide1:checked ~ .s1 {
+  margin-left: 0%;
+}
+/* fevereiro */
+#slide2:checked ~ .s1 {
+  margin-left: -8.4%;
+}
+/* março */
+#slide3:checked ~ .s1 {
+  margin-left: -16.75%;
+}
+/* abril */
+#slide4:checked ~ .s1 {
+  margin-left: -25.08%;
+}
+/* maio */
+#slide5:checked ~ .s1 {
+  margin-left: -33.4%;
+}
+/* junho */
+#slide6:checked ~ .s1 {
+  margin-left: -41.75%;
+}
+/* julho */
+#slide7:checked ~ .s1 {
+  margin-left: -50.08%;
+}
+/* agosto */
+#slide8:checked ~ .s1 {
+  margin-left: -58.4%;
+}
+/* setembro */
+#slide9:checked ~ .s1 {
+  margin-left: -66.75%;
+}
+/* outubro */
+#slide10:checked ~ .s1 {
+  margin-left: -75.08%;
+}
+/* novembro */
+#slide11:checked ~ .s1 {
+  margin-left: -83.4%;
+}
+/* dezembro */
+#slide12:checked ~ .s1 {
+  margin-left: -91.75%;
+}
+
 
 /* ------ Area de reponsividade ------ */
 /* botao de responsividade */
@@ -244,7 +299,7 @@ header input {
   header .Menu {
     display: flex;
   }
-  
+
   #Menu:checked ~ .nav-lista {
     right: -100%;
   }
