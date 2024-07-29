@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    /* cores do site */
+    --black: #000000;
+    --white: #ffffff;
+    --light-grayish-orange: #e3d4c2;
+    --grayish-orange: #d3bb9f;
+    --slightly-desaturated-orange--light: #c8aa86;
+    --slightly-desaturated-orange--dark: #b89163;
+    --dark-moderate-orange--yellow-tone: #9f7748;
+    --dark-moderate-orange-black-tone: #7d5e39;
+    --very-dark-orange--brown-tone: #572f00;
+  
+    /* use "var()" nos lugares de cores e automaticamente vai puxar para escolher as cores de cima */
+  }
+
+    @font-face {
+        font-family: "antic didone";
+        src: url(../../Fonte/AnticDidone-Regular.ttf);
+    }
+  
+    body {
+        background-color:#E3D4C2;
+    }
+
+    header {
+        width: 100%;
+        /* height: 7%; */
+        top: 0;
+        z-index: 50;
+        overflow: hidden;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        background-image: linear-gradient(to top, #C8AA86, #E3D4C2, #C8AA86);
+        position: fixed;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    header img {
+        width: 180px;
+        height: 60px;
+    }
+
+    header ul {
+        list-style-type: none;
+    }
+
+    header li{
+        display: inline-block;
+    }
+
+    header li button {
+        font-size: 130%;
+        text-decoration: none;
+        color: #7D5E39;
+        font-family: 'antic didone';
+        background-color: transparent;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        display: flex;
+    }
+
+    header li button:hover {
+        font-size: 130%;
+        text-decoration: none;
+        color: #7D5E39;
+        font-family: 'antic didone';
+        background-color: transparent;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        display: flex;
+        text-decoration-line: underline;
+        text-decoration-color: #7D5E39;
+    }
+
+    .spacec {
+        max-width: 1350px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .conteiner {
+        max-width: 1950px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quadro {
+        width: 800px;
+        height: 400px;
+        margin-top: 8%;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 6px var(--dark-moderate-orange--yellow-tone);
+        background-color: var(--dark-moderate-orange--yellow-tone);
+        position: relative;
+        display: flex;
+    }
+
+    .quadro img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .sup {
+        /* background-color: red; */
+        top: 0;
+        width: 760px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .perfil {
+        width: 150px;
+        height: 150px;
+        margin-left: 15px;
+    }
+
+    .dados {
+        width: 570px;
+        height: 150px;
+        margin-right: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        /* background-color: red; */
+    }
+
+    .dado1 {
+        height: fit-content;
+        margin-top: 10px;
+        padding: 3px;
+        border-radius: 10px;
+        background-color: #e3d4c2;
+        display: flex;
+        font-family: "antic didone";
+        color: var(--very-dark-orange--brown-tone);
+    }
+
+    .dado2 {
+        height: fit-content;
+        margin-top: 10px;
+        padding: 3px;
+        border-radius: 10px;
+        background-color: #e3d4c2;
+        display: flex;
+        font-family: "antic didone";
+        color: var(--very-dark-orange--brown-tone);
+    }
+
+    .dado3 {
+        height: fit-content;
+        margin-top: 10px;
+        padding: 3px;
+        border-radius: 10px;
+        background-color: #e3d4c2;
+        display: flex;
+        font-family: "antic didone";
+        color: var(--very-dark-orange--brown-tone);
+    }
+  
